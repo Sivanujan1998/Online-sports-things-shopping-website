@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+}
+.a1{
+    overflow-x: auto;
+    background-color: gold;
+    font-size: 50px;
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+    text-shadow: 2px 2px 5px red;
+}

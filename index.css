@@ -1,0 +1,264 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Verdana;
+}
+.main{
+      width: 100%;
+      height: 100vh;
+      
+      background-size: cover;
+      
+}
+nav{
+  width: 100%;
+  height: 100px;
+  background-color: #0005;
+  line-height: 80px;
+  font-size: 18px;
+  position: fixed;
+  overflow: auto;
+  padding: 0 50px 0 0;
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  transition: 0.5s all;
+  padding: 10px 0 0 0;
+  
+}
+nav ul li:hover{
+  /*background-color: #ffb94f;*/
+  text-shadow: 3px 3px 3px #ff0000;
+  
+  border-top:5px solid orange;
+  border-bottom:5px solid orange;
+ 
+  
+
+}
+nav ul{
+  float: right;
+ 
+}
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 30px;
+  font-size: 22px;
+
+}
+.logo:hover{
+  opacity: 0.9;
+  
+}
+.logo{
+  margin:0.5px 0.25px 0 5px;
+}
+
+
+
+
+
+
+
+
+.mySlides {
+display:none;
+position: relative;
+width:100%;
+height: 900px;
+
+}
+.show{
+position: absolute;
+z-index: -1;
+
+}
+
+
+
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password],input[type=email],select {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.submit {
+background-color: gold;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+}
+
+button:hover {
+opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+width: auto;
+padding: 10px 18px;
+background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+text-align: center;
+margin: 24px 0 12px 0;
+position: relative;
+}
+
+img.avatar {
+width: 40%;
+border-radius: 50%;
+}
+
+.container {
+padding: 16px;
+}
+
+span.psw {
+float: right;
+padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+background-color: #fefefe;
+margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+border: 1px solid #888;
+width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+position: absolute;
+right: 25px;
+top: 0;
+color: #000;
+font-size: 35px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: red;
+cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+-webkit-animation: animatezoom 0.6s;
+animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+from {-webkit-transform: scale(0)} 
+to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+from {transform: scale(0)} 
+to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+span.psw {
+   display: block;
+   float: none;
+}
+.cancelbtn {
+   width: 100%;
+}
+
+}
+.reset{
+width: auto;
+padding: 10px 18px;
+background-color: lightblue;
+}
+
+
+.signin {
+	box-shadow:inset 0px 1px 0px 0px #a4e271;
+	background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+	background-color:#89c403;
+	border-radius:6px;
+	border:1px solid #74b807;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:35px;
+
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528009;
+}
+.signin:hover {
+	background:linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+	background-color:#77a809;
+}
+.signin:active {
+	position:relative;
+	top:1px;
+}
+.register {
+	box-shadow:inset 0px 1px 0px 0px #f9eca0;
+	background:linear-gradient(to bottom, #f0c911 5%, #f2ab1e 100%);
+	background-color:#f0c911;
+	border-radius:6px;
+	border:1px solid #e65f44;
+	display:inline-block;
+	cursor:pointer;
+	color:#c92200;
+	font-family:Arial;
+	font-size:35px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ded17c;
+	
+}
+.register:hover {
+	background:linear-gradient(to bottom, #f2ab1e 5%, #f0c911 100%);
+	background-color:#f2ab1e;
+}
+.register:active {
+	position:relative;
+	top:1px;
+}
+
+#intro{
+	color: red;
+}

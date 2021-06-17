@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><div id="hidethis1" style="display:none;" >
+<?php
+include 'db.php';
+
+
+$file = fopen("supplier.txt","r");
+
+while(! feof($file))
+  {
+  $uname= fgets($file);
+  }
+
+fclose($file);
+
+$sql="select firstname,lastname,email,telno,province,shopname from user where username='$uname'";
+$result=$conn->query($sql);
+if($result->num_rows>0){
+    while($row=$result->fetch_assoc()){
+       
+
+?>
+<form action="supupdate1account.php" method="POST">
+    <table>
+    <tr>
+    <td>First name</td>
+    <td><input type="text" name="fname" value=<?php echo $row['firstname'];?>></td>
+    </tr>
+    <tr>
+    <td>last name</td>
+    <td><input type="text" name="lname" value=<?php echo $row['lastname'];?>></td>
+    </tr>
+    <tr>
+    <td>email address</td>
+    <td><input type="email" name="email" value=<?php echo $row['email'];?>></td>
+    </tr>
+    <tr>
+    <td>Phone number</td>
+    <td><input type="text" name="telno" value=<?php echo $row['telno'];?>></td>
+    </tr>
+    <tr>
+    <td>Province</td>
+    <td><select name="pro">
+                        <option value="central Province">central Province</option>
+                        <option value="Eastern Province">Eastern Province</option>
+                        <option value="Northern Province">Northern Province</option>
+                        <option value="Southern Province">Southern Province</option>
+                        <option value="Western Province">Western Province</option>
+                        <option value="North Western Province">North Western Province</option>
+                        <option value="North Central Province">North Central Province</option>
+                        <option value="Uva Province">Uva Province</option>
+                        <option value="Sabaragamuwa Province">Sabaragamuwa Province</option>
+                    </select></td>
+    </tr>
+    <tr>
+    <td>shop name</td>
+    <td><input type="text" name="sname" value=<?php echo $row['shopname'];?>></td>
+    </tr>
+    <tr>
+    <td><input type="reset"></td>
+    <td><input type="submit"></td>
+    </tr>
+    </table>
+    </form>
+
+    <?php
+}
+}
+?></div>
+</body>
+</html>

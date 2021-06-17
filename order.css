@@ -1,0 +1,24 @@
+
+  .full{
+      padding: 10px 10px 10px 10px;
+      background-color: white;
+      opacity: 0.9;
+      width: auto;
+  }
+
+  .heading{
+      font-size: 60px;
+      margin-top: 10px;
+      text-shadow: 3px 3px white;
+
+  }
+  
+
+  .title{
+      font-weight: bolder;
+      font-size: 25px;
+  }
+  
+ .container{
+     margin-bottom: 80px;
+ }

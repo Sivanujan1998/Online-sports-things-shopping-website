@@ -1,0 +1,94 @@
+
+.f1 
+{
+	font-family: arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    padding: 40px 1em;
+    padding-top: 40px;
+    padding-right: 1em;
+    padding-bottom: 40px;
+    padding-left: 1em;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-transform: none;
+    background-color:#212125;
+    
+
+}
+.footer_nav 
+{
+    
+    text-align: left;
+    text-transform: capitalize;
+    line-height: 21px;
+    font-size: 12px;
+    max-width: 1400px;
+    width: auto;
+    float: none;
+    display: inline-block;
+    padding: 20px;
+}
+.ft 
+{
+    font-family: arial, sans-serif;
+    /* border-collapse: collapse;*/
+    width: 100%;
+    margin-left: 0px;
+    color:white;
+
+}
+.ft th 
+{
+    border: 0px solid #dddddd;
+    margin-left: 0%;
+    padding: 8px;
+}
+.ft td
+{
+	border: 0px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+.wrapper 
+{
+	font-family: arial, sans-serif;
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+
+.wrapper a:hover
+{
+    color: blue;
+ 	text-decoration: underline;
+}
+
+
+td a 
+{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.social 
+{
+     text-align: center;
+     width: 40%;
+     margin-left: 30%;
+     display: block;
+}
+
+.social a:hover
+{
+    color:#000000;
+}
+td img{
+    opacity: 1;
+   height: 40%;
+}

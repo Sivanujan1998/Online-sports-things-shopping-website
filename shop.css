@@ -1,0 +1,149 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Verdana;
+}
+body{
+  background-color:#212125;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+nav{
+  width: 100%;
+  height: 100px;
+  background-color: #0005;
+  line-height: 80px;
+  font-size: 18px;
+  position: fixed;
+  overflow: auto;
+  padding: 0 50px 0 0;
+  z-index: 5;
+  
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  transition: 0.5s all;
+  padding: 10px 0 0 0;
+  
+}
+nav ul li:hover{
+  /*background-color: #ffb94f;*/
+  text-shadow: 3px 3px 3px #ff0000;
+  
+  border-top:5px solid orange;
+  border-bottom:5px solid orange;
+ 
+  
+
+}
+nav ul{
+  float: right;
+ 
+}
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 30px;
+  font-size: 22px;
+
+}
+.logo:hover{
+  opacity: 0.9;
+  
+}
+.logo{
+  margin:0.5px 0.25px 0 5px;
+}
+
+
+#section{
+ 
+ 
+  width:auto;
+  padding-top:150px;
+  padding-left: 2.5%;
+
+ 
+ 
+
+}
+ #section1{
+ background:black; 
+ overflow: auto;
+ width:auto;
+ padding:10px;
+  position:relative;
+  margin:auto;
+  padding:0px 0px 0px 22px;
+  
+}
+#section2{
+ background:white;
+ height:855px;
+ width:auto;
+ padding:10px;
+  position:relative;
+}
+#section3{
+ background:black;
+ background:black;
+ height:780px;
+ width:auto;
+ padding:10px;
+  position:relative;
+  margin:auto;
+}
+#pic:hover{
+  opacity:0.6;
+}
+
+#centered{
+  position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ background:white;
+ opacity:0.4;
+ height:55px;
+ width:480px;
+ font-size:48px;
+ font-family:Lithos Pro Regular,serif;
+ font-weight:bold;
+ font-weight:italic;
+}
+#specialcentered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background:white;
+  opacity:0.4;
+  height:110px;
+  width:480px;
+  font-size:48px;
+  font-family:Lithos Pro Regular,serif;
+  font-weight:bold;
+  font-weight:italic;
+}
+
+#pic1,#pic2,#pic3,#pic4,#pic5,#pic6{
+	float:left;
+    height:375px;
+	width:480px;
+	position:relative;
+	text-align:center;
+}
+#centered{
+	color:black;
+}
+ #centered:hover{
+	 color:blue;
+ }
+ #specialcentered:hover{
+  color:blue;
+}
+
+ 
